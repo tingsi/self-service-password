@@ -107,15 +107,6 @@ $pwd_show_policy_pos = "above";
 # manager: the above binddn
 $who_change_password = "user";
 
-## Questions/answers
-# Use questions/answers?
-# true (default)
-# false
-$use_questions = true;
-
-# Answer attribute should be hidden to users!
-$answer_objectClass = "extensibleObject";
-$answer_attribute = "info";
 
 # Extra questions (built-in questions are in lang/$lang.inc.php)
 #$messages['questions']['ice'] = "What is your favorite ice cream flavor?";
@@ -140,22 +131,6 @@ $mail_from = "admin@example.com";
 # Notify users anytime their password is changed
 $notify_on_change = false;
 
-## SMS
-# Use sms
-$use_sms = true;
-# GSM number attribute
-$sms_attribute = "mobile";
-# Partially hide number
-$sms_partially_hide_number = true;
-# Send SMS mail to address
-$smsmailto = "{sms_attribute}@service.provider.com";
-# Subject when sending email to SMTP to SMS provider
-$smsmail_subject = "Provider code";
-# Message
-$sms_message = "{smsresetmessage} {smstoken}";
-
-# SMS token length
-$sms_token_length = 6;
 
 # Reset URL (if behind a reverse proxy)
 #$reset_url = $_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_X_FORWARDED_HOST'] . $_SERVER['SCRIPT_NAME'];
@@ -199,7 +174,6 @@ $recaptcha_ssl = false;
 ## Default action
 # change
 # sendtoken
-# sendsms
 $default_action = "change";
 
 ## Extra messages
