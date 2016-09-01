@@ -210,4 +210,15 @@ $default_action = "change";
 # Launch a posthook script after successful password change
 #$posthook = "/usr/share/self-service-password/posthook.sh";
 
-?>
+
+
+$SMTP['FromAddress'] = "sddl@xiaokebang.com";
+$SMTP['FromName']    = 'BugFree';
+$SMTP['ReportTo']    = array();  // Where bug statistics message sened to. If empty, to all users.
+$SMTP['SendMethod']  = 'SMTP';   // MAIL|SENDMAIL|SMTP|QMAIL
+
+/* 9. SMTP param setting. */
+$SMTP['SendParam']['Host']     = 'smtp.exmail.qq.com';       // The server to connect. Default is localhost
+$SMTP['SendParam']['SMTPAuth'] = true;    // Whether or not to use SMTP authentication. Default is FALSE
+$SMTP['SendParam']['Username'] = 'sddl@xiaokebang.com';       // The username to use for SMTP authentication.
+$SMTP['SendParam']['Password'] = 'xxxxxx';       // The password to use for SMTP authentication.

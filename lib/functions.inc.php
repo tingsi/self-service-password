@@ -428,26 +428,19 @@ function decrypt($data, $keyphrase) {
 
 /* @function boolean send_mail(string $mail, string $mail_from, string $subject, string $body, array $data)
  * Send a mail, replace strings in body
- * @param mail Destination
+ * @param mail : TO
  * @param mail_from Sender
  * @param subject Subject
  * @param body Body
  * @param data Data for string replacement
  * @return result
  */
-function send_mail($mail, $mail_from, $subject, $body, $data) {
-
-    $result = false;
-
-    if (!$mail) {
-        error_log("send_mail: no mail given, exiting...");
-        return $result;
-    }
+function send_mail($mailto, $mail_from, $subject, $body, $data) {
 
     /* Replace data in mail, subject and body */
     foreach($data as $key => $value ) { 
-        $mail = str_replace('{'.$key.'}', $value, $mail);
-        $mail_from = str_replace('{'.$key.'}', $value, $mail_from);
+//        $mailto = str_replace('{'.$key.'}', $value, $mailto);
+//        $mail_from = str_replace('{'.$key.'}', $value, $mail_from);
         $subject = str_replace('{'.$key.'}', $value, $subject);
         $body = str_replace('{'.$key.'}', $value, $body);
     }
@@ -456,17 +449,36 @@ function send_mail($mail, $mail_from, $subject, $body, $data) {
     mb_internal_encoding("UTF-8");
     $subject = mb_encode_mimeheader($subject);
 
-    /* Set encoding for the body */
-    $header = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";
+    require_once("lib/phpmailer/class.phpmailer.php");
+    
+    $Mail = new PHPMailer();
+    $Mail->isSMTP();
+    $Mail->Host     = $SMTP["SendParam"]["Host"];
+    $Mail->SMTPAuth = $SMTP["SendParam"]["SMTPAuth"];
+    $Mail->Username = $SMTP["SendParam"]["Username"];
+    $Mail->Password = $SMTP["SendParam"]["Password"]; 
 
-    /* Send the mail */
-    if ($mail_from) {
-        $result = mail($mail, $subject, $body, $header."From: $mail_from".PHP_EOL,"-f$mail_from");
-    } else {
-        $result = mail($mail, $subject, $body, $header);
+    // Define From Address.
+    $Mail->From     = $SMTP["FromAddress"];
+    $Mail->FromName = $SMTP["FromName"];
+
+    if(!is_array($mailto) && $mailto != '')
+    {
+        $mailto = explode(',', $mailto);
     }
+    if(empty($mailto))       return false;
 
-    return $result;
+    foreach($mailto as $To)    $Mail->addAddress($To);
+
+    // Add Subject.
+    $Mail->Subject  =  stripslashes($subject);
+
+    // Set Body.
+//    $Mail->IsHTML(true);
+//    $Mail->CharSet = $_LANG["Charset"];
+    $Mail->Body    = $body;
+   
+    return $Mail->Send();
 
 }
 
