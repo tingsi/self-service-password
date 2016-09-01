@@ -436,6 +436,7 @@ function decrypt($data, $keyphrase) {
  * @return result
  */
 function send_mail($mailto, $mail_from, $subject, $body, $data) {
+  global $SMTP;
 
     /* Replace data in mail, subject and body */
     foreach($data as $key => $value ) { 
@@ -450,6 +451,7 @@ function send_mail($mailto, $mail_from, $subject, $body, $data) {
     $subject = mb_encode_mimeheader($subject);
 
     require_once("lib/phpmailer/class.phpmailer.php");
+    require_once("lib/phpmailer/class.smtp.php");
     
     $Mail = new PHPMailer();
     $Mail->isSMTP();
