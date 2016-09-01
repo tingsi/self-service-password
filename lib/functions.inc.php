@@ -462,13 +462,7 @@ function send_mail($mailto, $mail_from, $subject, $body, $data) {
     $Mail->From     = $SMTP["FromAddress"];
     $Mail->FromName = $SMTP["FromName"];
 
-    if(!is_array($mailto) && $mailto != '')
-    {
-        $mailto = explode(',', $mailto);
-    }
-    if(empty($mailto))       return false;
-
-    foreach($mailto as $To)    $Mail->addAddress($To);
+    $Mail->addAddress($mailto);
 
     // Add Subject.
     $Mail->Subject  =  stripslashes($subject);

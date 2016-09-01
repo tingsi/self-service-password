@@ -211,13 +211,9 @@ $default_action = "change";
 #$posthook = "/usr/share/self-service-password/posthook.sh";
 
 
-
+/* 9. SMTP param setting. */
 $SMTP['FromAddress'] = "sddl@xiaokebang.com";
 $SMTP['FromName']    = 'BugFree';
-$SMTP['ReportTo']    = array();  // Where bug statistics message sened to. If empty, to all users.
-$SMTP['SendMethod']  = 'SMTP';   // MAIL|SENDMAIL|SMTP|QMAIL
-
-/* 9. SMTP param setting. */
 $SMTP['SendParam']['Host']     = 'smtp.exmail.qq.com';       // The server to connect. Default is localhost
 $SMTP['SendParam']['SMTPAuth'] = true;    // Whether or not to use SMTP authentication. Default is FALSE
 $SMTP['SendParam']['Username'] = 'sddl@xiaokebang.com';       // The username to use for SMTP authentication.
