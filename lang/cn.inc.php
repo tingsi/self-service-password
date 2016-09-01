@@ -84,7 +84,7 @@ $messages['tokennotsent'] = "发送确认邮件时遇到错误";
 $messages['tokenrequired'] = "需要凭证";
 $messages['tokennotvalid'] = "凭证无效";
 $messages['resetbytokenhelp'] = "重置密码的凭证已通过电子邮件发送，点击<a href=\"?action=sendtoken\">这里</a>获取新凭证.";
-$messages['changemessage'] = "您好 {login},\n\n密码已更改。\n\n如果您没有提交这个请求，请立即联系系统管理员。";
+$messages['changemessage'] = "您好 {login},\n\n密码已更改。\n\n如果您没有提交这个请求，请立即联系系统管理员。\n\n{site}";
 $messages['changesubject'] = "密码已更改";
 $messages['badcaptcha'] = "没有输入正确的reCAPTCHA，请再次尝试。";
 $messages['notcomplex'] = "密码没有足够的不同类型字符";

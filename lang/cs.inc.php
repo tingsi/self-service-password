@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "Řetězec je povinný";
 $messages['tokennotvalid'] = "Řetězec je neplatný";
 $messages['resetbytokenhelp'] = "Odkaz zaslaný v e-mailu slouží pro reset hesla. K vyžadání nového odkazu přes e-mail <a href=\"?action=sendtoken\">klikněte zde</a>.";
 $messages['resetbysmshelp'] = "Řetězec pro reset hesla Vám byl zaslán pomocí SMS. K získání nového řetězce <a href=\"?action=sendsms\">klikněte zde</a>.";
-$messages['changemessage'] = "Dobrý den {login},\n\nVaše heslo bylo změněno.\n\nPokud jste změnu neprovedl/a, okamžitě kontaktujte správce.";
+$messages['changemessage'] = "Dobrý den {login},\n\nVaše heslo bylo změněno.\n\nPokud jste změnu neprovedl/a, okamžitě kontaktujte správce.\n\n{site}";
 $messages['changesubject'] = "Vaše heslo bylo změněno";
 $messages['badcaptcha'] = "reCAPTCHA řetězec nebyl zadán správně. Zadejte jej prosím znovu.";
 $messages['notcomplex'] = "Heslo neobsahuje dostatek skupin znaků";

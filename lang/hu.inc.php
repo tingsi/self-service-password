@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "Kód hiányzik";
 $messages['tokennotvalid'] = "Kód nem megfelelő";
 $messages['resetbytokenhelp'] = "Az e-mailben kapott link segítségével új jelszót állíthat be. Új link kéréséhez, <a href=\"?action=sendtoken\">kattintson ide</a>.";
 $messages['resetbysmshelp'] = "Az SMS-ben kapott kóddal új jelszót állíthat be. Új kód kéréséhez <a href=\"?action=sendsms\">kattintson ide</a>.";
-$messages['changemessage'] = "Tisztelt {login},\n\nA jelszava megváltozott.\n\nAmennyiben nem Ön kezdeményezte jelszava megváltoztatását, kérem, lépjen kapcsolatba az oldal adminisztrátorával!";
+$messages['changemessage'] = "Tisztelt {login},\n\nA jelszava megváltozott.\n\nAmennyiben nem Ön kezdeményezte jelszava megváltoztatását, kérem, lépjen kapcsolatba az oldal adminisztrátorával!\n\n{site}";
 $messages['changesubject'] = "Jelszava sikeresen módosítva.";
 $messages['badcaptcha'] = "A reCAPTCHA helytelen. Kérem, próbálja meg újra.";
 $messages['notcomplex'] = "A jelszó nem elég komplex. Kérem, használjon kis- és nagybetűket, számokat vagy speciális karaktereket.";

@@ -84,7 +84,7 @@ $messages['tokennotsent'] = "Erro durante o envio do e-mail de confirmação";
 $messages['tokenrequired'] = "O código é necessário";
 $messages['tokennotvalid'] = "Código inválido";
 $messages['resetbytokenhelp'] = "O código enviado por e-mail permite que você redefina a senha. Para enviar um novo código, <a href=\"?action=sendtoken\">Clique aqui</a>.";
-$messages['changemessage'] = "Olá {login},\n\nSua senha foi alterada.\n\nSe você não solicitou esta requisição, por favor contacte seu administrador imediatamente.";
+$messages['changemessage'] = "Olá {login},\n\nSua senha foi alterada.\n\nSe você não solicitou esta requisição, por favor contacte seu administrador imediatamente.\n\n{site}";
 $messages['changesubject'] = "Sua senha foi alterada";
 $messages['badcaptcha'] = "O reCAPTCHA não foi digitado corretamente. Tente novamente.";
 $messages['notcomplex'] = "Sua senha não possui diferentes tipos de caracteres suficientes para torná-la complexa";

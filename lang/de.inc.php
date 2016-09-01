@@ -86,7 +86,7 @@ $messages['tokenrequired'] = "Token ben&ouml;tigt";
 $messages['tokennotvalid'] = "Token ung&uuml;ltig";
 $messages['resetbytokenhelp'] = "Das mit der Mail versandte Token erlaubt Ihnen das R&uuml;cksetzen Ihres Passworts. Um ein neues Token zu erhalten, <a href=\"?action=sendtoken\">klicken Sie hier</a>.";
 $messages['resetbysmshelp'] = "Das mit per SMS versandte Token erlaubt Ihnen das R&uuml;cksetzen Ihres Passworts. Um ein neues Token zu erhalten, <a href=\"?action=sendtoken\">klicken Sie hier</a>.";
-$messages['changemessage'] = "Hello {login},\n\nYour password has been changed.\n\nIf your are not the issuer of this request, please contact your administrator immediately.";
+$messages['changemessage'] = "Hello {login},\n\nYour password has been changed.\n\nIf your are not the issuer of this request, please contact your administrator immediately.\n\n{site}";
 $messages['changesubject'] = "Ihr Passwort wurde ge&auml;ndert";
 $messages['badcaptcha'] = "Die reCAPTCHA wurde nicht richtig eingegeben. Versuchen Sie es erneut.";
 $messages['notcomplex'] = "Ihr Passwort hat nicht genug verschiedene Klassen von Zeichen";

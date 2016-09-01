@@ -88,7 +88,7 @@ $messages['tokennotsent'] = "Error enviant el correu de confirmació";
 $messages['tokenrequired'] = "Cal una fitxa";
 $messages['tokennotvalid'] = "La fitxa no és vàlida";
 $messages['resetbytokenhelp'] = "La fitxa enviada per correu us permet restaurar la contrasenya. Per aconseguir una nova fitxa, <a href=\"?action=sendtoken\">fer clic aquÃ­</a>.";
-$messages['changemessage'] = "Hola {login},\n\nHeu canviat la vostra contrasenya.\n\nSi no heu sol·licitat aquest servei, poseu-vos en contacte amb el vostre administrador inmediatament.";
+$messages['changemessage'] = "Hola {login},\n\nHeu canviat la vostra contrasenya.\n\nSi no heu sol·licitat aquest servei, poseu-vos en contacte amb el vostre administrador inmediatament.\n\n{site}";
 $messages['changesubject'] = "Heu canviat la vostra contrasenya";
 $messages['badcaptcha'] = "El reCAPTCHA no és correcte. Torneu a provar-ho.";
 $messages['notcomplex'] = "La vostra contrasenya no tÃ© prou classes diferents de caràcters";

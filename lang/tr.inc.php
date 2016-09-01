@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "Belirteç gerekli";
 $messages['tokennotvalid'] = "Belirteç geçerli değil";
 $messages['resetbytokenhelp'] = "E-postayla gönderilen link ile parolanızı sıfırlayabilirsiniz. Yeni bir link talep etmek için <a href=\"?action=sendtoken\">buraya</a> tıklayın.";
 $messages['resetbysmshelp'] = "SMS ile gönderilen belirteçle parolanızı sıfırlayabilirsiniz. Yeni bir belirteç almak için <a href=\"?action=sendsms\">buraya</a> tıklayın.";
-$messages['changemessage'] = "Merhaba {login},\n\nParolanız değiştirildi.\n\nEğer bu değişikliği siz yapmadıysanız en kısa sürede sistem yöneticinizle irtibata geçin.";
+$messages['changemessage'] = "Merhaba {login},\n\nParolanız değiştirildi.\n\nEğer bu değişikliği siz yapmadıysanız en kısa sürede sistem yöneticinizle irtibata geçin.\n\n{site}";
 $messages['changesubject'] = "Parolanız değiştirildi";
 $messages['badcaptcha'] = "Girilen güvenlik kodu hatalı, tekrar deneyin.";
 $messages['notcomplex'] = "Parolanız yeterli sayıda değişik sınıf karaktere sahip değil";

@@ -84,7 +84,7 @@ $messages['tokennotsent'] = "Errore nell'invio della mail di conferma";
 $messages['tokenrequired'] = "Token obbligatorio";
 $messages['tokennotvalid'] = "Token non valido";
 $messages['resetbytokenhelp'] = "Il token spedito via mail ti consente di resettare la password. Per avere un nuovo token, <a href=\"?action=sendtoken\">clicca qui</a>.";
-$messages['changemessage'] = "Buongiorno {login},\n\nLa tua password e' stata cambiata.\n\nSe non hai richiesto questa modifica, per favore contatta immediatamente il tuo amministratore di rete.";
+$messages['changemessage'] = "Buongiorno {login},\n\nLa tua password e' stata cambiata.\n\nSe non hai richiesto questa modifica, per favore contatta immediatamente il tuo amministratore di rete.\n\n{site}";
 $messages['changesubject'] = "La tua password e' stata cambiata";
 $messages['badcaptcha'] = "Il codice CAPTCHA non e' corretto. Riprova.";
 $messages['notcomplex'] = "La tua password non e' abbastanza complessa";

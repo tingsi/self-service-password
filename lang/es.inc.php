@@ -86,7 +86,7 @@ $messages['tokenrequired'] = "Una señal es requerida";
 $messages['tokennotvalid'] = "La señal no es válida";
 $messages['resetbytokenhelp'] = "La señal enviada por correo permite restear su contraseña. Para obtener una nueva señal, <a href=\"?action=sendtoken\">click aquí</a>.";
 $messages['resetbysmshelp'] = "La señal enviada por sms permite resetear su contraseña. Para obtener una nueva señal, <a href=\"?action=sendsms\">click aquí</a>.";
-$messages['changemessage'] = "Hola {login},\n\nSu contraseña ha cambiado.\n\nSi usted no es el emisor de esta petición, por favor contacte a su administrador inmediatamente.";
+$messages['changemessage'] = "Hola {login},\n\nSu contraseña ha cambiado.\n\nSi usted no es el emisor de esta petición, por favor contacte a su administrador inmediatamente.\n\n{site}";
 $messages['changesubject'] = "Su contraseña ha sido cambiada";
 $messages['badcaptcha'] = "El reCAPTCHA no se ha introducido correctamente. Inténtelo de nuevo.";
 $messages['notcomplex'] = "Su contraseña no tiene suficientes  clases de caracteres diferentes";

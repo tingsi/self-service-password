@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "请提供口令";
 $messages['tokennotvalid'] = "口令无效";
 $messages['resetbytokenhelp'] = "您可以通过邮件中的链接重置您的密码。<a href=\"?action=sendtoken\">点击这里</a>获取新链接。";
 $messages['resetbysmshelp'] = "您可以通过短信中的口令重置您的密码。<a href=\"?action=sendsms\">点击这里</a>获取新口令。";
-$messages['changemessage'] = "{login} 您好，\n\n您的密码已修改。\n\n如果您没有修改密码，请立即联系您的管理员。";
+$messages['changemessage'] = "{login} 您好，\n\n您的密码已修改。\n\n如果您没有修改密码，请立即联系您的管理员。\n\n{site}";
 $messages['changesubject'] = "您的密码已修改";
 $messages['badcaptcha'] = "验证码输入错误。请重试。";
 $messages['notcomplex'] = "您的密码没有包含足够的字符类型";

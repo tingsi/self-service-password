@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "Zahtevan je žeton";
 $messages['tokennotvalid'] = "Žeton ni pravilen";
 $messages['resetbytokenhelp'] = "Povezava, poslana v sporočilu, vam omogoča ponastavitev gesla. Za novo sporočilo s povezavo <a href=\"?action=sendtoken\">kliknite tukaj</a>.";
 $messages['resetbysmshelp'] = "Žeton, poslan preko SMS, vam omogoča ponastavitev gesla. Za nov žeton <a href=\"?action=sendsms\">kliknite tukaj</a>.";
-$messages['changemessage'] = "Pozdravljeni, {login},\n\nVaše geslo je bilo spremenjeno.\n\nČe niste zahtevali ponastavitve gesla, kontaktirajte IT podporo!";
+$messages['changemessage'] = "Pozdravljeni, {login},\n\nVaše geslo je bilo spremenjeno.\n\nČe niste zahtevali ponastavitve gesla, kontaktirajte IT podporo!\n\n{site}";
 $messages['changesubject'] = "Vaše geslo je bilo spremenjeno";
 $messages['badcaptcha'] = "reCAPTCHA ni bila pravilno vnesena. Poskusite ponovno.";
 $messages['notcomplex'] = "Vaše geslo nima dovolj različnih vrst znakov";

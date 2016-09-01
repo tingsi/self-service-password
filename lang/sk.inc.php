@@ -87,7 +87,7 @@ $messages['tokenrequired'] = "Token je povinný";
 $messages['tokennotvalid'] = "Token nie je správny";
 $messages['resetbytokenhelp'] = "Odkaz poslaný e-mailom Vám umožní resetovať heslo. Ak chcete požiadať o nový odkaz pomocou e-mailu, <a href=\"?action=sendtoken\">kliknite sem</a>.";
 $messages['resetbysmshelp'] = "Token poslaný SMSkou povolí reset Vášho hesla. Ak chcete získať nový token, <a href=\"?action=sendsms\">kliknite sem</a>.";
-$messages['changemessage'] = "Dobrý deň {login},\n\nvaše heslo bolo zmenené.\n\nAk ste nežiadali o zmenu hesla, prosím ihneď kontaktujte vášho administrátora.";
+$messages['changemessage'] = "Dobrý deň {login},\n\nvaše heslo bolo zmenené.\n\nAk ste nežiadali o zmenu hesla, prosím ihneď kontaktujte vášho administrátora.\n\n{site}";
 $messages['changesubject'] = "Vaše heslo bolo zmenené";
 $messages['badcaptcha'] = "ReCAPTCHA nebola zadaná správne. Skúste ešte raz.";
 $messages['notcomplex'] = "Vaše heslo neobsahuje dostatok rôznych druhov znakov";
